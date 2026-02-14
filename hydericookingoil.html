@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyderi Cooking Oil</title>
+  <style>
+    :root {
+      --brand-green: #1f7a3d;
+      --brand-gold: #f6b800;
+      --text-dark: #173119;
+      --bg-light: #fffef8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(160deg, #fffef8 0%, #f4ffe9 100%);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e6efde;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(4px);
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 0;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      color: var(--brand-green);
+    }
+
+    .logo span { color: var(--brand-gold); }
+
+    .menu {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 4.8rem 0 3.6rem;
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+      margin-bottom: 0.9rem;
+      color: var(--brand-green);
+    }
+
+    .hero p {
+      margin: 0 0 1.4rem;
+      max-width: 38ch;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 0.75rem 1.3rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--brand-green);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--brand-green);
+      border: 2px solid var(--brand-green);
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 22px;
+      padding: 1.2rem;
+      border: 1px solid #dde9d3;
+      box-shadow: 0 12px 32px rgba(15, 62, 30, 0.12);
+    }
+
+    .hero-card img {
+      width: 100%;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero-card p {
+      margin: 0.8rem 0 0;
+      font-size: 0.95rem;
+      color: #375738;
+    }
+
+    section { padding: 1.8rem 0; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--brand-green);
+      font-size: 1.7rem;
+    }
+
+    .features {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+
+    .feature {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #e3eddc;
+      padding: 1rem;
+    }
+
+    .feature h3 {
+      margin: 0.2rem 0 0.35rem;
+      color: var(--brand-green);
+      font-size: 1.1rem;
+    }
+
+    .about {
+      background: white;
+      border: 1px solid #e7f0e1;
+      border-radius: 20px;
+      padding: 1.4rem;
+    }
+
+    .about p { margin: 0.5rem 0; }
+
+    .contact {
+      text-align: center;
+      padding-bottom: 3.2rem;
+    }
+
+    .contact-box {
+      margin: 0 auto;
+      width: min(620px, 100%);
+      background: #1f7a3d;
+      color: white;
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #163c20;
+      color: #dcefd9;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Hyderi <span>Cooking Oil</span></div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <div>
+        <h1>Pure Taste, Healthy Choice.</h1>
+        <p>
+          Hyderi Cooking Oil brings freshness, lightness, and trusted quality to every kitchen.
+          Make every meal delicious while caring for your family's health.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contact">Order Now</a>
+          <a class="btn btn-secondary" href="#benefits">Explore Benefits</a>
+        </div>
+      </div>
+      <article class="hero-card">
+        <img alt="Bottle of Hyderi Cooking Oil" src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=80" />
+        <p>
+          Fortified blend for deep frying, sautéing, and everyday home cooking.
+        </p>
+      </article>
+    </section>
+
+    <section id="benefits">
+      <h2 class="section-title">Why Choose Hyderi Cooking Oil?</h2>
+      <div class="features">
+        <article class="feature">
+          <h3>Heart Friendly</h3>
+          <p>Low in trans fat and designed to support a balanced lifestyle.</p>
+        </article>
+        <article class="feature">
+          <h3>High Smoke Point</h3>
+          <p>Ideal for frying and high-heat cooking without compromising flavor.</p>
+        </article>
+        <article class="feature">
+          <h3>Natural Freshness</h3>
+          <p>Carefully processed to lock in natural aroma and clean taste.</p>
+        </article>
+        <article class="feature">
+          <h3>Trusted Quality</h3>
+          <p>Quality checks at every stage for consistency you can rely on.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Hyderi</h2>
+      <div class="about">
+        <p>
+          Hyderi Cooking Oil is dedicated to delivering premium edible oil for modern homes,
+          restaurants, and food businesses. We focus on quality sourcing, hygienic processing,
+          and customer trust.
+        </p>
+        <p>
+          From daily curries to festive fried recipes, Hyderi helps you cook with confidence.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-box">
+        <p><strong>Hyderi Cooking Oil Sales Team</strong></p>
+        <p>📞 +92 300 1234567 | ✉️ sales@hyderioil.com</p>
+        <p>📍 Karachi, Pakistan</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Hyderi Cooking Oil. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
